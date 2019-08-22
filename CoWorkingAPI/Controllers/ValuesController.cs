@@ -24,6 +24,13 @@ namespace CoWorkingAPI.Controllers
             return "value";
         }
 
+        // GET api/values/5
+        [HttpGet("{id2}")]
+        public ActionResult<string> Get2(int id2)
+        {
+            return "value";
+        }
+
         // POST api/values
         [HttpPost]
         public void Post([FromBody] string value)
